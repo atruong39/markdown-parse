@@ -147,20 +147,20 @@ public class MarkdownParseTest {
 
     // Lab Report 4 Tests
     @Test
-    public void testLabReport1() {
-        List<String> expected = List.of("%60google.com","google.com","ucsd.edu");
+    public void labReport4Test1() {
+        List<String> expected = List.of("`google.com","google.com","ucsd.edu");
         getLinksTest("lr4-test1.md", expected);
     }
 
     @Test
-    public void testLabReport2() {
+    public void labReport4Test2() {
         List<String> expected = List.of("a.com","a.com(())","example.com");
         getLinksTest("lr4-test2.md", expected);
     }
 
     @Test
-    public void testLabReport3() {
-        List<String> expected = List.of("https://www.twitter.com","https://ucsd-cse15l-w22.github.io/","https://cse.ucsd.edu/");
+    public void labReport4Test3() {
+        List<String> expected = List.of("https://ucsd-cse15l-w22.github.io/");
         getLinksTest("lr4-test3.md", expected);
     }
 }
